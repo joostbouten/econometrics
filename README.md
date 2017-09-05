@@ -6,5 +6,4 @@ Assignments for the Methods course of Econometrics
 * Assignment 2a
   * [Do File](https://github.com/joostbouten/econometrics/edit/master/Assignment2a.do)
   * [Docx File](https://github.com/joostbouten/econometrics/edit/master/Assignment2a.docx)
-  * Graphs: [III(a)](https://github.com/joostbouten/econometrics/edit/master/Graphs%CA2a%(3a).pdf)  
-[III(d)](https://github.com/joostbouten/econometrics/edit/master/Graphs%CA2a%(3d).pdf)
+  * Graphs: [III(a)](https://github.com/joostbouten/econometrics/edit/master/Graphs%CA2a%(3a).pdf)[III(d)](https://github.com/joostbouten/econometrics/edit/master/Graphs%CA2a%(3d).pdf)
