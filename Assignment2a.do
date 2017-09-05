@@ -12,8 +12,7 @@ graph twoway lfit logpgp95 avexpr
 graph twoway (scatter logpgp95 avexpr) (lfit logpgp95 avexpr)
 *IIIb
 reg logpgp95 avexpr
-*EXPLANATION:
-*
+*EXPLANATION
 *IIIc
 *EXPLANATION
 *IIId
