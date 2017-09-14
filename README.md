@@ -17,7 +17,8 @@ Assignments for the Methods course of Econometrics
   * [Data](https://github.com/joostbouten/econometrics/raw/master/ca3a_2017(1).dta)
   * [Do File](https://github.com/joostbouten/econometrics/blob/master/Do-file%20CA3a.do)
   * [Docx File](https://github.com/joostbouten/econometrics/raw/master/Econometrics%20Assignment%203a.docx)
-* Assignment 3b
+* Assignment 3b: [Final Version](https://github.com/joostbouten/econometrics/blob/master/Assignment%203b%20-%20Final.pdf) [*(Download)*](https://github.com/joostbouten/econometrics/raw/master/Assignment%203b%20-%20Final.pdf)
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/Computer%20assignment%203b%20ectrics%202017.pdf)
   * [Data](https://github.com/joostbouten/econometrics/raw/master/lz_2009.dta)
   * [Docx File](https://github.com/joostbouten/econometrics/raw/master/Econometrics%20Assignment%203b.docx)
+  * [Do File](https://github.com/joostbouten/econometrics/blob/master/Do-file%20CA3b.do)
