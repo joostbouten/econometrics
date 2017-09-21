@@ -30,5 +30,5 @@ Assignments for the Methods course of Econometrics
 * Assignment 4b: [Final Version]() [*(Download)*]()
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA4b%20ectrics%202017.pdf)
   * [Data](https://github.com/joostbouten/econometrics/raw/master/bat_did_2017.dta)
-  * [Docx File]()
+  * [Docx File](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20CA4b.docx)
   * [Do File]()
