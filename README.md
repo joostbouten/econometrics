@@ -22,3 +22,8 @@ Assignments for the Methods course of Econometrics
   * [Data](https://github.com/joostbouten/econometrics/raw/master/lz_2009.dta)
   * [Docx File](https://github.com/joostbouten/econometrics/raw/master/Econometrics%20Assignment%203b.docx)
   * [Do File](https://github.com/joostbouten/econometrics/blob/master/Do-file%20CA3b.do)
+* Assignment 4a: [Final Version]() [*(Download)*]()
+  * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA4a_ectrics2017.pdf)
+  * [Data](https://github.com/joostbouten/econometrics/raw/master/minwage_280915.dta)
+  * [Docx File]()
+  * [Do File]()
