@@ -1,5 +1,5 @@
 *Computer Assignment 5a ‘Event time’, Oct 2017
-use "C:\Users\u1257943\Downloads\ca5a_bat_2016.dta", clear
+use "C:\Users\u1265889\Downloads\ca5a_bat_2016.dta", clear
 xtset route calendar_week
 sum calendar_week if LetterReceived==1
 sum residual_weight if calendar_week<-6
@@ -45,3 +45,23 @@ ssc install parmest
 parmest, label format(estimate) list(parm label estimate)
 export excel using "M:\Data\eventtime1.xls", firstrow(variables)
 
+* IV)
+*a)
+xtreg residual_weight LetterReceived TreatmentOngoing TreatmentCompleted w2-w52, fe i(route) cluster(route)
+*EXPL.
+xtreg residual_weight LetterReceived TreatmentOngoing TreatmentCompleted w2-w52, fe i(route) 
+*EXPL.
+*b)
+sort route calendar_week
+by route: gen time=sum(TreatmentCompleted)
+gen linear_decay=TreatmentCompleted*time
+xtreg residual_weight LetterReceived TreatmentOngoing TreatmentCompleted linear_decay w2-w52, fe i(route) cluster(route)
+*EXPL.
+*c)
+gen shortterm=(time<=15)
+gen effect_st=TreatmentCompleted*shortterm
+gen effect_lt=TreatmentCompleted*(1-shortterm)
+xtreg residual_weight LetterReceived TreatmentOngoing effect_st effect_lt w2-w52, fe i(route) cluster(route)
+*EXPL.
+test effect_st==effect_lt
+*EXPL.
