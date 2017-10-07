@@ -41,4 +41,5 @@ Assignments for the Methods course of Econometrics
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA6b_ectrics1_2017(1).pdf)
   * [Data](https://github.com/joostbouten/econometrics/raw/master/ca6b.dta)
   * [Docx File]()
-  * [Do File]()
+  * [Do File](https://raw.githubusercontent.com/joostbouten/econometrics/master/Do-file%20CA6b.do)
+  * [Log File]()
