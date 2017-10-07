@@ -43,4 +43,4 @@ Assignments for the Methods course of Econometrics
   * [Docx File](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20Assignment%206b.docx)
   * [Do File](https://raw.githubusercontent.com/joostbouten/econometrics/master/Do-file%20CA6b.do)
   * [Log File](https://github.com/joostbouten/econometrics/blob/master/Log-file%20CA6b.pdf)
-  * [Temporary PDF](econometrics/Econometrics Assignment 6b.pdf)
+  * [Temporary PDF](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20Assignment%206b.pdf)
