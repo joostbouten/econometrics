@@ -40,6 +40,6 @@ Assignments for the Methods course of Econometrics
 * Assignment 6b: [Final Version]() [*(Download)*]()
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA6b_ectrics1_2017(1).pdf)
   * [Data](https://github.com/joostbouten/econometrics/raw/master/ca6b.dta)
-  * [Docx File]()
+  * [Docx File](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20Assignment%206a.docx)
   * [Do File](https://raw.githubusercontent.com/joostbouten/econometrics/master/Do-file%20CA6b.do)
   * [Log File](https://github.com/joostbouten/econometrics/blob/master/Log-file%20CA6b.pdf)
