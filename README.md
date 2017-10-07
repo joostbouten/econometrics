@@ -35,7 +35,7 @@ Assignments for the Methods course of Econometrics
 * Assignment 6a: [Final Version](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20CA6a.pdf) [*(Download)*](https://github.com/joostbouten/econometrics/raw/master/Econometrics%20CA6a.pdf)
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA6a_Ectrics1_2017.pdf)
   * [Data](https://github.com/joostbouten/econometrics/raw/master/heterogeneity.dta)
-  * [Docx File](https://github.com/joostbouten/econometrics/raw/master/Econometrics%20Assignment%206a.docx)
+  * [Docx File](https://github.com/joostbouten/econometrics/blob/master/Econometrics%20Assignment%206a.docx)
   * [Do File](https://github.com/joostbouten/econometrics/blob/master/Do-file%20CA6a.do)
 * Assignment 6b: [Final Version]() [*(Download)*]()
   * [Assignment](https://github.com/joostbouten/econometrics/raw/master/CA6b_ectrics1_2017(1).pdf)
