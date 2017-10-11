@@ -1,4 +1,4 @@
-##Econometrics Summary
+## Econometrics Summary
 
 #### Slides lecture 1:
 
@@ -41,7 +41,7 @@ Comparable control groups are generated through **randomized trial**.
 
 *Statistical significance $\neq$ economic significance*
 
-Is the effect small or large? \\[100\%\cdot\widehat{\beta} \bigm/ baseline\  mean\ of\ outcome\ variable \\]
+Is the effect small or large? $$100\%\cdot\widehat{\beta} \bigm/ baseline\  mean\ of\ outcome\ variable $$
 
 Mechanism experiment to:
 
@@ -84,7 +84,7 @@ As soon as $\phi < 1$, there is imperfect compliance and thus $LATE > ITT$
 
 The instrumental variable approach comes in handy when compliance is imperfect, it can be used to show treatment effect for compliers by isolating the random part of variation in treatment delivered.
 
-####Slides lecture 3:
+#### Slides lecture 3:
 
 **Regression discontinuity**
 
@@ -137,5 +137,5 @@ $T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i$
 
 * Second stage: $Y_i=\alpha+\beta\cdot R_i+\lambda\cdot\widehat{T}_{del\ i}+\varepsilon_i$
 
-####Slides lecture 4
+#### Slides lecture 4
 
