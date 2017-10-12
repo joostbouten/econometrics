@@ -139,3 +139,26 @@ $T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i$
 
 #### Slides lecture 4
 
+**Difference-in-differences**: Two groups, two periods
+
+Control group needs to have a similar trends, levels may differ. $\rightarrow$ Treatment effect: difference between treatment and control in difference between before/after treatment levels.
+
+*DiD estimation equation:*
+$$Y_{it}=\alpha + \beta\cdot(TREAT_i\cdot POST_t)+\delta\cdot TREAT_i+\gamma\cdot POST_t+\varepsilon_{it}$$
+
+Where $TREAT$ is equal to $1$ for the treatment group and $0$ otherwise.
+Where $POST$ is equal to $1$ for the treatment period and $0$ otherwise. 
+And where $TREAT\cdot POST$ is the treatment dummy, equal to $1$ for treatment group during treatment period, $0$ otherwise.
+
+
+The $TREAT$ variable takes away level differences between the treatment and control group. 
+
+The $TREAT\cdot POST$ variable tests whether trend post-treatment in treatment group differs from trend in control group.
+
+Estimated treatment effect: $\beta$
+
+
+
+
+
+
