@@ -157,8 +157,104 @@ The $TREAT\cdot POST$ variable tests whether trend post-treatment in treatment g
 
 Estimated treatment effect: $\beta$
 
+Framework can be easily extended to include more than two groups and periods.
 
+*Multiple groups/periods estimation equation:*
+$$Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta_i + \gamma_t+\varepsilon_{it}$$
 
+Where $Policy_{it}$ is the treatment dummy, $1$ for the treatment group during treatment period, $0$ otherwise.
 
+Where $\delta$ represents group fixed effects, a series of dummies: one for each group. 
 
+And where $\gamma$ represents time fixed effects, controlling for the common trend using a series of dummies: one for each time period.
 
+Not all (external) factors may stay fixed after start of treatment: include **observed covariates** that change differently over time for each group $\rightarrow$ only works for observed variables.
+
+One possible solution: including *group-specific linear time trends*. This is not a reason to neglect the common trends assumption $\rightarrow$ only an additional check on results. 
+
+*Estimation equation including covariates and trends:* 
+$$Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta\cdot X_{it}+\mu_i+\gamma_t+\theta_{it}+\varepsilon_{it}$$
+
+Where $X$ represents observed covariates that vary by $i$ and $t$. 
+
+And where $\theta$ stands for a series of group specific linear time trends, allowing for different trends in the outcome between the groups. 
+
+DiD can be used to estimate treatment effect of *randomized trial* as well as *observational data*.
+
+With observational data: provide _story_ for the plausibility of:
+
+1. Independent treatment assignment
+2. Similar outcome trends
+3. No other policies pursued
+
+#### Slides lecture 5
+
+How to deal with **time varying treatment effects**
+
+1. *Ignore*: simply report ATE for period elapsed since start of treatment.
+2. *Impose parametric model*
+3. *Graphical exploration of time-variation in treatment effect*
+
+Ignoring time variation:
+
+*  No idea of effects on shorter/longer term
+*  If short-term looks worse than long term: _*false negative*_
+* If short-term looks better than long term: _*false positive*_
+
+Imposing a parametric model:
+
+*  Linear model: $Y_{it}=\alpha\cdot T_{it}+\alpha'\cdot T_{it}\cdot t+\beta+\varepsilon_{it}$
+
+Where $T_{it}\cdot t$ is the interaction term of the treatment dummy and calendar time.
+
+* This model may be misspecified (i.e. indefinite growth / convergence)
+* In case of mis-specification: risk of false positives or false negatives
+
+Graphical exploration of time variation:
+
+* First plot, then choose specification to test treatment effect.
+* Two ways of producing graphical evidence:
+
+1. Multiple treatment-control comparisons: stable control group -- as good as random treatment.
+
+ Treatment dummies for every time period to estimate difference in treatment vs. control at every time interval (excluding one):
+$$Y_{it}=\alpha_0+T_iT_1\alpha1+T_iT_2\alpha_2+...+T_iT_z\alpha_z+\lambda_i+\mu_t+\varepsilon_{it}$$
+$$Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}$$
+Where $T_i$ is $1$ for treatment locations and $0$ otherwise.
+ 
+ And where $\alpha_t$ are coefficients of interest $\rightarrow$ plot $\alpha_t$ by time
+  
+2. Time-to-event analysis: disappearing control group -- as good as random timing of treatment
+
+Randomized timing of treatment: exposure to treatment = **common event**
+ 
+**Event time $(\tau)$:** time relative to start of the treatment
+
+*Estimation equation using event time dummy variables (exclude one dummy)*
+
+$$Y_{it}=\beta_0+W_{-10}\alpha_{-10}+W_{-9}\alpha_{-9}+...+W_9\alpha_9+W_{10}\alpha_{10}+\lambda_i+\mu_t+\varepsilon_{it}$$
+
+$$Y_{it}=\beta_0+\sum^T_{\tau=-T}\alpha_{\tau}W_\tau+\lambda_i+\mu_t+\varepsilon_{it}$$
+ 
+Where event time coefficients show the level of outcome at event time $\tau$ relative to event time $\tau=-1$.
+
+Where $\mu_t$ controls for all common shocks (time-fixed effects)
+
+And where $\lambda_i$ represents location fixed effects. 
+
+***Note:*** number of observations per event time varies (fewer at tails)
+
+Dealing with tails: create **_bins_**:
+
+$$Y_{it}=\beta_0+W_{-10\ to\ -8}\alpha_{-10\ to\ -8}+W_{-7}\alpha_{-7}+...+W_{8\ to\ 10}\alpha_{8\ to\ 10}+\lambda_i+\mu_t+\varepsilon_{it}$$
+
+Where $W_{8\ to\ 10}$ is $1$ for event times $\tau=\{8,9,10\}$ and $0$ otherwise. 
+
+***Testing significance:***
+
+* On ATE if it is a good approximation
+* Separate tests for subperiods
+* Using parametric model: appropriate functional form
+
+  
+#### Slides lecture 6
