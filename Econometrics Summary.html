@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Econometrics Summary</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">Econometrics Summary</h2>
+
+<h4 id="toc_1">Slides lecture 1:</h4>
+
+<hr>
+
+<p>Before/after comparisons may under/overestimate treatment effects due to naive counterfactuals (pokon example).</p>
+
+<p>Naive counterfactuals:</p>
+
+<ul>
+<li> Before/After comparison</li>
+<li> Cross-sectional comparison (selection bias)</li>
+</ul>
+
+<p>Selection bias = omitted variable bias</p>
+
+<p>Potential outcomes:</p>
+
+<ul>
+<li> Outcome for subject/group when treated</li>
+<li> Outcome for subject/group when not treated</li>
+</ul>
+
+<p>Problem of causal interference: <strong>only one potential outcome is observed</strong></p>
+
+<p>Possible solution: perfectly comparable control group as proxy for the unobserved potential outcome. </p>
+
+<p>Selection bias may be caused by self-selection</p>
+
+<p>An omitted variable should:</p>
+
+<ol>
+<li> differ between treatment and control groups.</li>
+<li> be related to both the outcome and treatment variable. </li>
+<li> be unobserved.</li>
+</ol>
+
+<p>Individual <em>i</em> has two potential outcomes:</p>
+
+<ol>
+<li>\(Y_{1i}\): With treatment</li>
+<li>\(Y_{0i}\): Without treatment</li>
+</ol>
+
+<p>The causal effect of being subjected to treatment now becomes: \(Y_{1i} - Y_{0i}\)</p>
+
+<p>Comparable control groups are generated through <strong>randomized trial</strong>.</p>
+
+<p><em>Check for balance:</em> after randomization, are differences in characteristics of control and treatment group statistically significantly different from zero? Lack of balance is an indication of failure of randomization. </p>
+
+<h2 id="toc_2"></h2>
+
+<p><em>Statistical significance \(\neq\) economic significance</em></p>
+
+<p>Is the effect small or large? \[100\%\cdot\widehat{\beta} \bigm/ baseline\  mean\ of\ outcome\ variable \]</p>
+
+<p>Mechanism experiment to:</p>
+
+<ol>
+<li>Single out <u>one</u> mechanism and see how strongly it works </li>
+<li>As a <u>screening device</u></li>
+</ol>
+
+<h4 id="toc_3">Slides lecture 2:</h4>
+
+<hr>
+
+<p><strong>Instrumental variables</strong> can be used to isolate random variation in treatment.</p>
+
+<p><strong>ITT</strong>: Intention To Treat &ndash; The effect of <em>prescribing</em> the treatment rather than <em>taking</em> the treatment. </p>
+
+<ul>
+<li> <em>Treatment dilution:</em> subjects assigned to treatment fail to take treatment</li>
+<li> <em>Treatment migration:</em> subjects in the control group take the treatment</li>
+</ul>
+
+<p>What we are looking for is the effect of <em>treatment delivered</em> \(\rightarrow\) isolate random variation in treatment delivered with an instrumental variable.</p>
+
+<p>Three assumptions when using the IV-approach:</p>
+
+<ol>
+<li>Independence assumption: instrument isolates as good as random variation in treatment.</li>
+<li> First stage: instrument should be sufficiently strong, the share of random variation in treatment delivered should be sufficiently large.</li>
+<li> Exclusion restriction: instrument should only affect the outcome by way of the treatment</li>
+</ol>
+
+<p><strong>LATE</strong>: Local Average Treatment Effect &ndash; The effect of treatment on <em>compliers</em>, and not the effect on never/always-takers.</p>
+
+<p><em>Important note:</em> LATE is not always representative of ATE, never/always-takers may respond differently. </p>
+
+<h2 id="toc_4"></h2>
+
+<p><u><em>The IV-approach:</em></u></p>
+
+<p>First stage effect &ndash; effect of the instrument \((Z)\) on treatment dummy \((D)\) : \(\phi\)</p>
+
+<ul>
+<li> \(Y_i=\alpha+\beta\ D_i+\varepsilon_i\)</li>
+</ul>
+
+<p>Reduced form \((ITT)\) &ndash; effect of the instrument on the outcome variable \((Y)\) : \(\rho\) </p>
+
+<ul>
+<li>\(D_i=\alpha+\beta\ Z_i+\varepsilon_i\)</li>
+</ul>
+
+<p>Second stage effect \((LATE)\): \(\lambda = \rho \cdot \dfrac{1}{\phi}\)</p>
+
+<ul>
+<li>\(Y_i=\alpha+\beta\ \widehat{D}_i+\varepsilon_i\)</li>
+</ul>
+
+<p>As soon as \(\phi &lt; 1\), there is imperfect compliance and thus \(LATE &gt; ITT\)</p>
+
+<p>The instrumental variable approach comes in handy when compliance is imperfect, it can be used to show treatment effect for compliers by isolating the random part of variation in treatment delivered.</p>
+
+<h4 id="toc_5">Slides lecture 3:</h4>
+
+<hr>
+
+<p><strong>Regression discontinuity</strong></p>
+
+<ul>
+<li>Treatment dummy: \(0\) before treatment, \(1\) after treatment.</li>
+<li>Control group and treatment group are expected to be very similar around the cutoff and only differ in terms of receiving the treatment</li>
+</ul>
+
+<p><u><em>RD Estimation equation:</em></u>
+\[Y_i=\alpha+\beta\cdot cy_i+\rho\cdot D_i+\varepsilon_i\]
+Where \(cy_i\) is the &lsquo;running variable&rsquo; and \(D_i\) is the treatment dummy</p>
+
+<ul>
+<li> We expect as-good-as random variation in treatment due to assignment based on one observable variable (as long as they do not differ in other terms) </li>
+</ul>
+
+<p>There is thus no omitted variable bias as long as covariates change continuously and smoothly \(\rightarrow\) then the only discontinuous change is caused by the treatment. </p>
+
+<p>The regression discontinuity design provides a <em>local</em> average treatment effect: the effect identified is specific to the group of subjects around the cutoff. People further from the cutoff may differ from this group.</p>
+
+<p>The relationship between the outcome and the running variable does not need to be flat. Dissimilarities between treatment and control may differ as long as the relationship between the running variable and the outcome can be captured. </p>
+
+<p>Even situations with polynomial or changing relationships can be dealt with.</p>
+
+<p><strong>Bandwidth</strong>: the width of the window around the cutoff</p>
+
+<p>The choice of the bandwidth is a tradeoff between noise and bias:</p>
+
+<p><em>Narrow (Broad) bandwidth:</em></p>
+
+<ul>
+<li> <strong>+ :</strong> Less (more) concern about choosing functional forms/non-linear trends. </li>
+<li> <strong>&ndash; :</strong> Estimate of the treatment effect becomes more (less) noisy.</li>
+</ul>
+
+<p><em>Important:</em> <strong>Manipulation assumption</strong> &mdash; Subjects cannot manipulate treatment assignment </p>
+
+<p><strong>Falsification test</strong>&mdash; Test for an effect of the treatment on an outcome that you expect to be <strong>un</strong>affected by the treatment.</p>
+
+<ul>
+<li>\(A_i=\alpha=\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i\)</li>
+</ul>
+
+<p>Where \(A\) is that other outcome, \(X\) is the running variable and \(D\) is the treatment dummy.</p>
+
+<h2 id="toc_6"></h2>
+
+<p><strong>Fuzzy RD</strong>: when the treatment does not sharply turn on/off at the cutoff, but <em>treatment intensity</em> changes. Or <em>probability of receiving treatment</em> changes</p>
+
+<ul>
+<li> \(Y_i=\alpha=\beta\cdot R_i+\lambda\cdot T_{del\ i}+\varepsilon_i\)</li>
+</ul>
+
+<p>Where \(T_{del}\) stands for <u>treatment delivered</u> and \(R\) is the running variable.</p>
+
+<p>Fuzzy RD: <strong>Combine with IV</strong> \(\rightarrow\) isolate random variation in \(T_{del}\), use original treatment assigned \((D)\) as an instrument for \(T_{del}\)</p>
+
+<ul>
+<li><p>First stage:
+\(T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i\)</p></li>
+<li><p>From fist stage: predict \(\widehat{T}_{del}\)</p></li>
+<li><p>Second stage: \(Y_i=\alpha+\beta\cdot R_i+\lambda\cdot\widehat{T}_{del\ i}+\varepsilon_i\)</p></li>
+</ul>
+
+<h4 id="toc_7">Slides lecture 4</h4>
+
+<hr>
+
+<p><strong>Difference-in-differences</strong>: Two groups, two periods</p>
+
+<p>Control group needs to have a similar trends, levels may differ \(\rightarrow\) Treatment effect: difference between treatment and control in difference between before/after treatment levels.</p>
+
+<p><em>DiD estimation equation:</em>
+\[Y_{it}=\alpha + \beta\cdot(TREAT_i\cdot POST_t)+\delta\cdot TREAT_i+\gamma\cdot POST_t+\varepsilon_{it}\]</p>
+
+<p>Where \(TREAT\) is equal to \(1\) for the treatment group and \(0\) otherwise.
+Where \(POST\) is equal to \(1\) for the treatment period and \(0\) otherwise. 
+And where \(TREAT\cdot POST\) is the treatment dummy, equal to \(1\) for treatment group during treatment period, \(0\) otherwise.</p>
+
+<p>The \(TREAT\) variable takes away level differences between the treatment and control group. </p>
+
+<p>The \(TREAT\cdot POST\) variable tests whether trend post-treatment in treatment group differs from trend in control group.</p>
+
+<p>Estimated treatment effect: \(\beta\)</p>
+
+<h2 id="toc_8"></h2>
+
+<p>Framework can be easily extended to include more than two groups and periods.</p>
+
+<p><em>Multiple groups/periods estimation equation:</em>
+\[Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta_i + \gamma_t+\varepsilon_{it}\]</p>
+
+<p>Where \(Policy_{it}\) is the treatment dummy, \(1\) for the treatment group during treatment period, \(0\) otherwise.</p>
+
+<p>Where \(\delta\) represents group fixed effects, a series of dummies: one for each group. </p>
+
+<p>And where \(\gamma\) represents time fixed effects, controlling for the common trend using a series of dummies: one for each time period.</p>
+
+<p>Not all (external) factors may stay fixed after start of treatment: include <strong>observed covariates</strong> that change differently over time for each group \(\rightarrow\) only works for observed variables</p>
+
+<p>One possible solution: including <em>group-specific linear time trends</em>. This is not a reason to neglect the common trends assumption \(\rightarrow\) only an additional check on results. </p>
+
+<p><em>Estimation equation including covariates and trends:</em> 
+\[Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta\cdot X_{it}+\mu_i+\gamma_t+\theta_{it}+\varepsilon_{it}\]</p>
+
+<p>Where \(X\) represents observed covariates that vary by \(i\) and \(t\) </p>
+
+<p>And where \(\theta\) stands for a series of group specific linear time trends, allowing for different trends in the outcome between the groups. </p>
+
+<p>DiD can be used to estimate treatment effect of <em>randomized trial</em> as well as <em>observational data</em>.</p>
+
+<p>With observational data: provide <u>story</u> for the plausibility of:</p>
+
+<ol>
+<li>Independent treatment assignment</li>
+<li>Similar outcome trends</li>
+<li>No other policies pursued</li>
+</ol>
+
+<h4 id="toc_9">Slides lecture 5</h4>
+
+<hr>
+
+<p>How to deal with <strong>time varying treatment effects</strong></p>
+
+<ol>
+<li><em>Ignore</em>: simply report ATE for period elapsed since start of treatment.</li>
+<li><em>Impose parametric model</em></li>
+<li><em>Graphical exploration of time-variation in treatment effect</em></li>
+</ol>
+
+<p>Ignoring time variation:</p>
+
+<ul>
+<li> No idea of effects on shorter/longer term</li>
+<li> If short-term looks worse than long term: <u><em>false negative</em></u></li>
+<li>If short-term looks better than long term: <u><em>false positive</em></u></li>
+</ul>
+
+<p>Imposing a parametric model:</p>
+
+<ul>
+<li> Linear model: \(Y_{it}=\alpha\cdot T_{it}+\alpha&#39;\cdot T_{it}\cdot t+\beta+\varepsilon_{it}\)</li>
+</ul>
+
+<p>Where \(T_{it}\cdot t\) is the interaction term of the treatment dummy and calendar time.</p>
+
+<ul>
+<li>This model may be misspecified (i.e. indefinite growth / convergence)</li>
+<li>In case of mis-specification: risk of false positives or false negatives</li>
+</ul>
+
+<p>Graphical exploration of time variation:</p>
+
+<ul>
+<li>First plot, then choose specification to test treatment effect.</li>
+</ul>
+
+<p>Two ways of producing graphical evidence:</p>
+
+<ul>
+<li>Multiple treatment-control comparisons: stable control group &ndash; as good as random treatment.</li>
+</ul>
+
+<p>Treatment dummies for every time period to estimate difference in treatment vs. control at every time interval (excluding one):
+\[Y_{it}=\alpha_0+T_iT_1\alpha1+T_iT_2\alpha_2+&hellip;+T_iT_z\alpha_z+\lambda_i+\mu_t+\varepsilon_{it}\]
+\[Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}\]
+Where \(T_i\) is \(1\) for treatment locations and \(0\) otherwise.</p>
+
+<p>And where \(\alpha_t\) are coefficients of interest \(\rightarrow\) plot \(\alpha_t\) by time</p>
+
+<ul>
+<li>Time-to-event analysis: disappearing control group &ndash; as good as random timing of treatment</li>
+</ul>
+
+<p>Randomized timing of treatment: exposure to treatment = <strong>common event</strong></p>
+
+<p><strong>Event time \((\tau)\):</strong> time relative to start of the treatment</p>
+
+<p><em>Estimation equation using event time dummy variables (exclude one dummy)</em></p>
+
+<p>\[Y_{it}=\beta_0+W_{-10}\alpha_{-10}+W_{-9}\alpha_{-9}+&hellip;+W_9\alpha_9+W_{10}\alpha_{10}+\lambda_i+\mu_t+\varepsilon_{it}\]</p>
+
+<p>\[Y_{it}=\beta_0+\sum^T_{\tau=-T}\alpha_{\tau}W_\tau+\lambda_i+\mu_t+\varepsilon_{it}\]</p>
+
+<p>Where event time coefficients show the level of outcome at event time \(\tau\) relative to event time \(\tau=-1\).</p>
+
+<p>Where \(\mu_t\) controls for all common shocks (time-fixed effects)</p>
+
+<p>And where \(\lambda_i\) represents location fixed effects. </p>
+
+<p><strong><em>Note:</em></strong> number of observations per event time varies (fewer at tails)</p>
+
+<p>Dealing with tails: create <strong><u>bins</u></strong>:</p>
+
+<p>\[Y_{it}=\beta_0+W_{-10\ to\ -8}\alpha_{-10\ to\ -8}+W_{-7}\alpha_{-7}+&hellip;+W_{8\ to\ 10}\alpha_{8\ to\ 10}+\lambda_i+\mu_t+\varepsilon_{it}\]</p>
+
+<p>Where \(W_{8\ to\ 10}\) is \(1\) for event times \(\tau=\{8,9,10\}\) and \(0\) otherwise. </p>
+
+<p><strong><em>Testing significance:</em></strong></p>
+
+<ul>
+<li>On ATE if it is a good approximation</li>
+<li>Separate tests for subperiods</li>
+<li>Using parametric model: appropriate functional form</li>
+</ul>
+
+<h4 id="toc_10">Slides lecture 6</h4>
+
+<hr>
+
+<p><strong>Heterogeneous treatment effects:</strong> treatment effects that vary across subjects</p>
+
+<p>In RCT with <strong>one observation</strong> after treatment:</p>
+
+<p>\[Y_i=\alpha_0+\alpha_1 T_i+\varepsilon_i\]
+<em>Note: no \(t\)-subscripts</em></p>
+
+<p><strong>Multiple observations:</strong>
+\[Y_{it}=\alpha_0+\alpha_1 T_{it}+\lambda_i+\mu_t+\varepsilon_{it}\]</p>
+
+<p><em>Strategies to deal with treatment heterogeneity</em></p>
+
+<ol>
+<li><em>Ignore</em>: simply report ATE (weighted average across subgroups)</li>
+<li>Ex-post: <em>treatment-by-covariate</em> interaction</li>
+<li>Ex-ante: factorial design of RCT +  treatment-by-covariate interaction</li>
+</ol>
+
+<p>Consequences of <u>ignoring heterogeneity</u>:</p>
+
+<ol>
+<li>False negative</li>
+<li>Not enabling <strong>targeting</strong> of treatment</li>
+<li>Less idea of the <strong>mechanism</strong> that is at work</li>
+</ol>
+
+<p>Including interaction term:</p>
+
+<ul>
+<li><p>Include all possible combinations (of \(T\) and \(HIGH\)) </p></li>
+<li><p>Fully interacted model:</p></li>
+</ul>
+
+<p>\[Y_{it}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i\]</p>
+
+<p>Where \(HIGH_i\) is the <strong>pre</strong>-treatment condition for unit \(i\) that allows for a different intercept when \(HIGH=1\)</p>
+
+<p>And where \(T_i\cdot HIGH_i\) allows for a different slope when \(HIGH=1\)</p>
+
+<ul>
+<li>Marginal effect of treatment \(T: \frac{\partial Y}{\partial T}=\alpha_1+\alpha_2\cdot HIGH_i\)</li>
+<li><p>Conditional average treatment effect:</p>
+
+<ul>
+<li> If  \(\ HIGH=0\rightarrow \alpha_1\)</li>
+<li> If  \(\ HIGH=1\rightarrow \alpha_1+\alpha_2\)</li>
+</ul></li>
+<li><p>Alternative specification:</p></li>
+</ul>
+
+<p>\[Y_i=\alpha_0+\alpha_1T_i\cdot (1-HIGH_i)+\alpha_4T_i\cdot HIGH_i+\alpha_3\cdot HIGH+\varepsilon_i\]</p>
+
+<p>Where \(\alpha_1\) is the treatment effect for the \(LOW\) group</p>
+
+<p>And where \(\alpha_4\) is the treatment effect for the \(HIGH\) group</p>
+
+<p><em>Notes:</em></p>
+
+<ol>
+<li>\(\alpha_1\) and \(\alpha_4\) can differ in terms of the standard errors as well </li>
+<li>Additionally test whether \(\alpha_1\) and \(\alpha_4\) differ from each other</li>
+</ol>
+
+<p><u>For Dif-in-Dif</u>:</p>
+
+<p>Recall DiD estimation equation:
+\[Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}\]</p>
+
+<p>After interacting with \(HIGH\) and including all terms:</p>
+
+<p>\[Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}+\alpha_4T_iP_tHIGH_i+\alpha_5T_iHIGH_i+
+\alpha_6P_tHIGH_i+\alpha_7HIGH_i+\varepsilon_{it}\]</p>
+
+<table>
+<thead>
+<tr>
+<th>Where:</th>
+<th>Allows for estimation of</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>\(\alpha_0\)</strong></td>
+<td>Intercept of the \(LOW\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_1\)</strong></td>
+<td>Conditional average treatment effect at \(LOW\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_2\)</strong></td>
+<td>Level difference between treatment and control groups for \(LOW\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_3\)</strong></td>
+<td>Trend in the control group for \(LOW\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_4\)</strong></td>
+<td>Conditional average treatment effect for \(HIGH\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_5\)</strong></td>
+<td>Level difference between treatment and control group for \(HIGH\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_6\)</strong></td>
+<td>Trend in the control group for \(HIGH\) group</td>
+</tr>
+<tr>
+<td><strong>\(\alpha_7\)</strong></td>
+<td>Intercept of the \(HIGH\) group</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here the conditional average treatment effect is \(\alpha_1+\alpha_4\) for the \(HIGH\) group and \(\alpha_1\) for the \(LOW\) group.</p>
+
+<p><u>For Dif-in-Dif: multiple groups, multiple periods</u></p>
+
+<ul>
+<li>Differential treatment effect is again estimated by: \(\alpha_4T_iP_t\cdot HIGH_i\)</li>
+<li>Subject fixed effects are captured by: \(\alpha_5T_i\cdot HIGH_i+\alpha_7\cdot HIGH_i\)</li>
+<li>\(\alpha_6P_t\cdot HIGH_i\) allows for different trends in control groups in \(HIGH\) and \(LOW\) groups </li>
+</ul>
+
+<h2 id="toc_11"></h2>
+
+<p><strong>Continuous interaction variables</strong> (rather than dichotomous)</p>
+
+<ul>
+<li>\(HIGH\) could take any value between \(0\) and \(1\)</li>
+<li>Marginal effect of treatment also continuously varying with \(HIGH\)
+\(\rightarrow \frac{\partial Y}{\partial T}=\alpha_1+\alpha_2\cdot HIGH_i\)</li>
+</ul>
+
+<p><em><u>Possibility 1</u> Apply fully interacted model</em></p>
+
+<p>Reporting \(\alpha_1\) and \(\alpha_2\) and thus only reporting treatment effect at \(HIGH=0\) and the difference in effect when \(HIGH=1\)</p>
+
+<p><em><u>Possibility 2</u> Applying the alternative specification</em></p>
+
+<p>Reporting \(\alpha_1\) and \(\alpha_4\) and thus only reporting treatment effect at \(HIGH=0\ \&amp;\ HIGH=1\) and no intermediate values of \(HIGH\)</p>
+
+<p><em>Note:</em> \(HIGH=0\ \&amp;\ HIGH=1\) may be totally uninteresting</p>
+
+<p><em><u>Possibility 3</u> Creating a marginal effect plot</em></p>
+
+<p>Showing the marginal effect of the treatment at all actual values of the interaction variable</p>
+
+<h2 id="toc_12"></h2>
+
+<p>Without random assignment into the groups, there is no guarantee of balance and therefore the interaction term may not have <u><strong>causal interpretation</strong></u> as \(LOW\big/HIGH\) groups may differ on other (un)observable characteristics.</p>
+
+<p>The interpretation may predict but not cause treatment effect.</p>
+
+<p><u><em>Data mining: (ex-post)</em></u></p>
+
+<p><strong>Bonferroni correction</strong>: divide target \(p\)-value by number of conducted hypothesis tests.</p>
+
+<p>Because of the increasing chance of finding an effect as the number of tested hypotheses increases.</p>
+
+<p><u><em>Factorial design: (ex-ante)</em></u></p>
+
+<p>The idea of randomizing treatment <strong>and</strong> interaction term to allow for causal interpretation of the interaction term.</p>
+
+<p>With continuous interaction term: <strong>matched pair randomization</strong></p>
+
+<ul>
+<li>Rank subjects from highest to lowest pre-treatment value of interaction term</li>
+<li>Randomly assign one subject per pair to treatment</li>
+</ul>
+
+<hr>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
