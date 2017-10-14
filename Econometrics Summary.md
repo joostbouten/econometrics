@@ -74,13 +74,18 @@ Three assumptions when using the IV-approach:
 --
 _*The IV-approach:*_
 
+Causal relation of interest:
+
+-  $Y_i=\alpha+\beta\ D_i+\varepsilon_i$
+
+
 First stage effect -- effect of the instrument $(Z)$ on treatment dummy $(D)$ : $\phi$
  
--  $Y_i=\alpha+\beta\ D_i+\varepsilon_i$
+- $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
 
 Reduced form $(ITT)$ -- effect of the instrument on the outcome variable $(Y)$ : $\rho$ 
 
-- $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
+-  $Y_i=\alpha+\beta\ Z_i+\varepsilon_i$
 
 Second stage effect $(LATE)$: $\lambda = \rho \cdot \dfrac{1}{\phi}$
 
@@ -400,9 +405,11 @@ With continuous interaction term: **matched pair randomization**
 
 _*IV-Approach*_
 
-**First stage:** $Y_i=\alpha+\beta\ D_i+\varepsilon_i$
+**Causal relation of interest:** $Y_i=\alpha+\beta\ D_i+\varepsilon_i$
 
-**Reduced form $(ITT)$:** $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
+**First stage:** $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
+
+**Reduced form $(ITT)$:** $Y_i=\alpha+\beta\ Z_i+\varepsilon_i$
 
 **Second stage effect $(LATE)$:** $Y_i=\alpha+\beta\ \widehat{D}_i+\varepsilon_i$
 
