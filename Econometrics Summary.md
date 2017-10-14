@@ -205,13 +205,13 @@ How to deal with **time varying treatment effects**
 2. *Impose parametric model*
 3. *Graphical exploration of time-variation in treatment effect*
 
-Ignoring time variation:
+_Ignoring time variation:_
 
 *  No idea of effects on shorter/longer term
 *  If short-term looks worse than long term: _*false negative*_
 * If short-term looks better than long term: _*false positive*_
 
-Imposing a parametric model:
+_Imposing a parametric model:_
 
 *  Linear model: $Y_{it}=\alpha\cdot T_{it}+\alpha'\cdot T_{it}\cdot t+\beta+\varepsilon_{it}$
 
@@ -229,7 +229,7 @@ Two ways of producing graphical evidence:
 * Multiple treatment-control comparisons: stable control group -- as good as random treatment.
 
 Treatment dummies for every time period to estimate difference in treatment vs. control at every time interval (excluding one):
-$$Y_{it}=\alpha_0+T_iT_1\alpha1+T_iT_2\alpha_2+...+T_iT_z\alpha_z+\lambda_i+\mu_t+\varepsilon_{it}$$
+$$Y_{it}=\alpha_0+T_iT_1\alpha_1+T_iT_2\alpha_2+...+T_iT_z\alpha_z+\lambda_i+\mu_t+\varepsilon_{it}$$
 $$Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}$$
 Where $T_i$ is $1$ for treatment locations and $0$ otherwise.
  
@@ -329,8 +329,8 @@ $$Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}$$
 
 After interacting with $HIGH$ and including all terms:
 
-$$Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}+\alpha_4T_iP_tHIGH_i+\alpha_5T_iHIGH_i+
-\alpha_6P_tHIGH_i+\alpha_7HIGH_i+\varepsilon_{it}$$
+* $Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}+\alpha_4T_iP_tHIGH_i+\alpha_5T_iHIGH_i+
+\alpha_6P_tHIGH_i+\alpha_7HIGH_i+\varepsilon_{it}$
 
 Where:| Allows for estimation of  
 ---|---
@@ -396,5 +396,52 @@ With continuous interaction term: **matched pair randomization**
 
 ----
 
+## Equations
 
+_*IV-Approach*_
 
+**First stage:** $Y_i=\alpha+\beta\ D_i+\varepsilon_i$
+
+**Reduced form $(ITT)$:** $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
+
+**Second stage effect $(LATE)$:** $Y_i=\alpha+\beta\ \widehat{D}_i+\varepsilon_i$
+
+_*Regression discontinuity design*_
+
+**Sharp RD:** $Y_i=\alpha+\beta\cdot cy_i+\rho\cdot D_i+\varepsilon_i$
+
+**Falsification test:** $A_i=\alpha=\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i$
+
+**Fuzzy RD -- First stage:** $T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i$
+
+**Fuzzy RD -- Second stage:** $Y_i=\alpha+\beta\cdot R_i+\lambda\cdot\widehat{T}_{del\ i}+\varepsilon_i$
+
+*_Difference in differences approach_*
+
+**Two groups/periods:** $Y_{it}=\alpha + \beta\cdot(TREAT_i\cdot POST_t)+\delta\cdot TREAT_i+\gamma\cdot POST_t+\varepsilon_{it}$
+
+**Multiple groups/periods:** $Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta_i + \gamma_t+\varepsilon_{it}$
+
+**Multiple groups/periods with covariates and trends:** $Y_{it}=\alpha+\beta\cdot Policy_{it}+\delta\cdot X_{it}+\mu_i+\gamma_t+\theta_{it}+\varepsilon_{it}$
+
+_*Time varying treatment effects*_
+
+**Linear model:** $Y_{it}=\alpha\cdot T_{it}+\alpha'\cdot T_{it}\cdot t+\beta+\varepsilon_{it}$
+
+**Multiple intervals:** $Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}$
+
+**Event-time analysis:** $Y_{it}=\beta_0+\sum^T_{\tau=-T}\alpha_{\tau}W_\tau+\lambda_i+\mu_t+\varepsilon_{it}$
+
+**Using bins:** $Y_{it}=\beta_0+W_{-10\ to\ -8}\alpha_{-10\ to\ -8}+W_{-7}\alpha_{-7}+...+W_{8\ to\ 10}\alpha_{8\ to\ 10}+\lambda_i+\mu_t+\varepsilon_{it}$
+
+_*Heterogeneous treatment effects*_
+
+**Fully interacted model:** $Y_{it}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i$ 
+
+**Alternative specification:** $Y_i=\alpha_0+\alpha_1T_i\cdot (1-HIGH_i)+\alpha_4T_i\cdot HIGH_i+\alpha_3\cdot HIGH+\varepsilon_i$
+
+**DiD + Interaction:** $Y_{it}=\alpha_0+\alpha_1T_iP_t+\alpha_2T_i+\alpha_3P_t+\varepsilon_{it}+\alpha_4T_iP_tHIGH_i+$$
+$$\alpha_5T_iHIGH_i+
+\alpha_6P_tHIGH_i+\alpha_7HIGH_i+\varepsilon_{it}$
+
+--
