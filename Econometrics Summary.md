@@ -126,16 +126,16 @@ The choice of the bandwidth is a tradeoff between noise and bias:
 
 *Narrow (Broad) bandwidth:*
  
-*  **+ :** Less (more) concern about choosing functional forms/non-linear trends. 
-*  **-- :** Estimate of the treatment effect becomes more (less) noisy.
+*  Less (more) concern about choosing functional forms/non-linear trends. 
+*  Estimate of the treatment effect becomes more (less) noisy.
 
 *Important:* **Manipulation assumption** --- Subjects cannot manipulate treatment assignment 
 
 **Falsification test**--- Test for an effect of the treatment on an outcome that you expect to be **un**affected by the treatment.
 
-* $A_i=\alpha=\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i$
+* $A_i=\alpha=\beta \cdot R_i+\rho \cdot D_i +\varepsilon_i$
 
-Where $A$ is that other outcome, $X$ is the running variable and $D$ is the treatment dummy.
+Where $A$ is that other outcome, $R$ is the running variable and $D$ is the treatment dummy.
 
 --
 
@@ -419,9 +419,9 @@ _*IV-Approach*_
 
 _*Regression discontinuity design*_
 
-**Sharp RD:** $Y_i=\alpha+\beta\cdot cy_i+\rho\cdot D_i+\varepsilon_i$
+**Sharp RD:** $Y_i=\alpha+\beta\cdot R_i+\rho\cdot D_i+\varepsilon_i$
 
-**Falsification test:** $A_i=\alpha=\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i$
+**Falsification test:** $A_i=\alpha+\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i$
 
 **Fuzzy RD -- First stage:** $T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i$
 
