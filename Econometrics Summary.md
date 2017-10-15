@@ -239,7 +239,7 @@ Two ways of producing graphical evidence:
 
 Treatment dummies for every time period to estimate difference in treatment vs. control at every time interval (excluding one):
 $$Y_{it}=\alpha_0+T_iT_1\alpha_1+T_iT_2\alpha_2+...+T_iT_z\alpha_z+\lambda_i+\mu_t+\varepsilon_{it}$$
-$$Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}$$
+$$Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda_i+\mu_t+\varepsilon_{it}$$
 Where $T_i$ is $1$ for treatment locations and $0$ otherwise.
  
  And where $\alpha_t$ are coefficients of interest $\rightarrow$ plot $\alpha_t$ by time
@@ -421,7 +421,7 @@ _*Regression discontinuity design*_
 
 **Sharp RD:** $Y_i=\alpha+\beta\cdot R_i+\rho\cdot D_i+\varepsilon_i$
 
-**Falsification test:** $A_i=\alpha+\beta \cdot X_i+\rho \cdot D_i +\varepsilon_i$
+**Falsification test:** $A_i=\alpha+\beta \cdot R_i+\rho \cdot D_i +\varepsilon_i$
 
 **Fuzzy RD -- First stage:** $T_{del}=\alpha+\beta\cdot R_i+\phi\cdot D_i+\varepsilon_i$
 
@@ -439,7 +439,7 @@ _*Time varying treatment effects*_
 
 **Linear model:** $Y_{it}=\alpha\cdot T_{it}+\alpha'\cdot T_{it}\cdot t+\beta+\varepsilon_{it}$
 
-**Multiple intervals:** $Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda+\mu_t+\varepsilon_{it}$
+**Multiple intervals:** $Y_{it}=\alpha_0+\sum^Z_{t=1}T_iT_t\alpha_t+\lambda_i+\mu_t+\varepsilon_{it}$
 
 **Event-time analysis:** $Y_{it}=\beta_0+\sum^T_{\tau=-T}\alpha_{\tau}W_\tau+\lambda_i+\mu_t+\varepsilon_{it}$
 
