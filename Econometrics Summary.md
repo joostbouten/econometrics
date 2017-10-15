@@ -80,6 +80,8 @@ Causal relation of interest:
 
 
 First stage effect -- effect of the instrument $(Z)$ on treatment dummy $(D)$ : $\phi$
+
+(Where $\phi = $ treatment delivered among those assigned to receive treatment –treatment delivered among those assigned not to receive treatment) 
  
 - $D_i=\alpha+\beta\ Z_i+\varepsilon_i$
 
@@ -93,6 +95,8 @@ Second stage effect $(LATE)$: $\lambda = \rho \cdot \dfrac{1}{\phi}$
  
 As soon as $\phi < 1$, there is imperfect compliance and thus $LATE > ITT$
 
+$LATE = ITT \cdot \dfrac{1}{\phi}$
+
 The instrumental variable approach comes in handy when compliance is imperfect, it can be used to show treatment effect for compliers by isolating the random part of variation in treatment delivered.
 
 #### Slides lecture 3:
@@ -103,8 +107,8 @@ The instrumental variable approach comes in handy when compliance is imperfect, 
 * Control group and treatment group are expected to be very similar around the cutoff and only differ in terms of receiving the treatment
 
 _*RD Estimation equation:*_
-$$Y_i=\alpha+\beta\cdot cy_i+\rho\cdot D_i+\varepsilon_i$$
-Where $cy_i$ is the 'running variable' and $D_i$ is the treatment dummy
+$$Y_i=\alpha+\beta\cdot R_i+\rho\cdot D_i+\varepsilon_i$$
+Where $R_i$ is the 'running variable' and $D_i$ is the treatment dummy
 
 *  We expect as-good-as random variation in treatment due to assignment based on one observable variable (as long as they do not differ in other terms) 
 
