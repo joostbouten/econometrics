@@ -307,7 +307,7 @@ Including interaction term:
 
 * Fully interacted model:
 
-$$Y_{it}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i$$
+$$Y_{i}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i$$
 
 Where $HIGH_i$ is the **pre**-treatment condition for unit $i$ that allows for a different intercept when $HIGH=1$
 
@@ -447,7 +447,7 @@ _*Time varying treatment effects*_
 
 _*Heterogeneous treatment effects*_
 
-**Fully interacted model:** $Y_{it}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i$ 
+**Fully interacted model:** $Y_{i}=\alpha_0+\alpha_1 T_i+\alpha_2T_i\cdot HIGH_i+\alpha_3 HIGH_i+\varepsilon_i$ 
 
 **Alternative specification:** $Y_i=\alpha_0+\alpha_1T_i\cdot (1-HIGH_i)+\alpha_4T_i\cdot HIGH_i+\alpha_3\cdot HIGH+\varepsilon_i$
 
